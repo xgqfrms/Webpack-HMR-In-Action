@@ -1,0 +1,42 @@
+{
+  "name": "webpack-hmr-in-action",
+  "version": "1.0.1",
+  "description": "Webpack HMR In Action",
+  "keywords": [
+    "Webpack",
+    "HMR",
+    "Webpack HMR In Action"
+  ],
+  "author": "xgqfrms",
+  "license": "MIT",
+  "main": "src/index.js",
+  "scripts": {
+    "open": "webpack-dev-server --open",
+    "dev": "webpack --mode=development",
+    "app": "webpack --mode=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgqfrms/Webpack-HMR-In-Action.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xgqfrms/Webpack-HMR-In-Action/issues"
+  },
+  "homepage": "https://github.com/xgqfrms/Webpack-HMR-In-Action#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-middleware": "^3.7.2"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.0.3",
+    "html-webpack-plugin": "^4.3.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
