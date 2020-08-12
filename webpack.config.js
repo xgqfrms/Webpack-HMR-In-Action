@@ -30,10 +30,12 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 // const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  mode: 'development',
+  // mode: 'development',
   entry: {
-    app: './src/index.js',
+    app: './src/app.js',
+    // index: './src/index.js',
     // math: './src/math.js',
+    // logs: './src/logs.js',
   },
   output: {
     filename: '[name].bundle.js',
@@ -44,7 +46,8 @@ module.exports = {
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',
-    hot: true,
+    // hot: true,
+    hotOnly: true,
   },
   plugins: [
     // clear dist
@@ -55,7 +58,7 @@ module.exports = {
       template: './src/index.html',
       title: 'Webpack HMR In Action',
     }),
-    new webpack.HotModuleReplacementPlugin(),
+    // new webpack.HotModuleReplacementPlugin(),
     // TypeError: Class constructor HotModuleReplacementPlugin cannot be invoked without 'new'
   ],
 };

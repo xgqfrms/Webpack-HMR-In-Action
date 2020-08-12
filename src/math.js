@@ -26,7 +26,10 @@ class MathClass {
   }
   // 静态方法
   static sum(a, b) {
-    return a + b;
+    log(`a ** b`, a, b)
+    return a ** b;
+    // log(`a + b`, a, b)
+    // return a + b;
   }
   // 实例方法
   sum(a, b) {

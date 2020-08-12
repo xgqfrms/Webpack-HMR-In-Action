@@ -13,6 +13,9 @@
       margin: 0;
       padding: 0;
     }
+    h1{
+      color: red;
+    }
   </style>
 </head>
 <body>
@@ -22,14 +25,22 @@
   <main>
     <article>
       <section id="app"></section>
+      <button id="btn">add</button>
     </article>
   </main>
   <footer>
     <p>copyright&copy; xgqfrms 2020</p>
   </footer>
   <!-- js -->
-  <script>
+  <script async>
     const log = console.log;
+    const app = document.querySelector(`#app`);
+    let count = 10;
+    for (let i = 0; i < count; i++) {
+      setTimeout(() => {
+        app.insertAdjacentHTML(`beforeEnd`, `<p>${i}</p>`)
+      }, 1000 * i);
+    }
   </script>
 </body>
 </html>
